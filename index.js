@@ -24,6 +24,10 @@ app.listen(port, () => {
 });
 
 app.get('/',(req,res)=>{
+    res.send('Testing');
+});
+
+app.get('/employees',(req,res)=>{
     mysqlConnection.query('SELECT * FROM employee WHERE EmpID =1', (err, rows, fields) =>{
         if(err) console.log(err)
         res.json(rows);
