@@ -23,7 +23,7 @@ app.listen(3002, () => {
     console.log('Server listens at 3002');
 });
 
-app.get('/',(req,res)=>{
+app.get('',(req,res)=>{
     res.send('Testing');
 });
 
