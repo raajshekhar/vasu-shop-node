@@ -17,9 +17,9 @@ app.use(bodyParser.json());
 //     console.log('DB connection failed', JSON.stringify(err, null, 2))
 // })
 
-const port = process.env.port || 3002;
+//const port = process.env.port || 3002;
 
-app.listen(port, () => {
+app.listen(3002, () => {
     console.log('Server listens at 3002');
 });
 
