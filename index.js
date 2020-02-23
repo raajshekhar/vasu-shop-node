@@ -27,7 +27,7 @@ app.get('',(req,res)=>{
     res.send('Testing');
 });
 
-app.get('/employees',(req,res)=>{
+/*app.get('/employees',(req,res)=>{
     mysqlConnection.query('SELECT * FROM employee WHERE EmpID =1', (err, rows, fields) =>{
         if(err) console.log(err)
         res.json(rows);
@@ -40,3 +40,4 @@ app.get('/employee/:id', (req,res)=>{
         res.json(rows);
     });
 });
+*/
